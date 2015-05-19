@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8"?><testclasses><instore><testclass>com.hybris.instore.impl.DefaultInStoreServiceTest</testclass><testclass>com.hybris.instore.strategies.impl.DefaultInStoreSiteSelectorStrategyTest</testclass></instore></testclasses>

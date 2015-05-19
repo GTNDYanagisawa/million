@@ -1,0 +1,54 @@
+# ImpEx for Importing Products Stock Levels and Warehouses into Merchandise
+  
+# Macros / Replacement Parameter definitions
+$productCatalog=hybrisProductCatalog
+  
+$catalogVersion=catalogversion(catalog(id[default=$productCatalog]),version[default='Staged'])[unique=true,default=$productCatalog:Staged]
+  
+INSERT_UPDATE Vendor;code[unique=true]
+;hybris;Hybris;Hybris
+  
+INSERT_UPDATE Warehouse;code[unique=true];vendor(code);default[default=true]
+;warehouse_c;hybris;
+  
+INSERT_UPDATE StockLevel;available;warehouse(code)[unique=true];inStockStatus(code);maxPreOrder;maxStockLevelHistoryCount;overSelling;preOrder;productCode[unique=true];reserved
+;100;warehouse_c;forceInStock;0;-1;0;0;0001;0
+;100;warehouse_c;forceInStock;0;-1;0;0;0002;0
+;100;warehouse_c;forceInStock;0;-1;0;0;0003;0
+;100;warehouse_c;forceInStock;0;-1;0;0;0004;0
+;100;warehouse_c;forceInStock;0;-1;0;0;0005;0
+;100;warehouse_c;forceInStock;0;-1;0;0;0006;0
+;100;warehouse_c;forceInStock;0;-1;0;0;0007;0
+;100;warehouse_c;notSpecified;0;-1;0;0;0100;0
+;100;warehouse_c;notSpecified;0;-1;0;0;0101;0
+;100;warehouse_c;notSpecified;0;-1;0;0;0102;0
+;100;warehouse_c;notSpecified;0;-1;0;0;0110;0
+;100;warehouse_c;notSpecified;0;-1;0;0;0111;0
+;100;warehouse_c;notSpecified;0;-1;0;0;0112;0
+;100;warehouse_c;notSpecified;0;-1;0;0;0200;0
+;100;warehouse_c;notSpecified;0;-1;0;0;0201;0
+;100;warehouse_c;notSpecified;0;-1;0;0;0202;0
+;100;warehouse_c;notSpecified;0;-1;0;0;0210;0
+;100;warehouse_c;notSpecified;0;-1;0;0;0211;0
+;100;warehouse_c;notSpecified;0;-1;0;0;0212;0
+  
+UPDATE Product;code[unique=true];$catalogVersion;stockLevels(productCode,warehouse(code));vendors(code)
+;0001;;0001:warehouse_c;hybris
+;0002;;0002:warehouse_c;hybris
+;0003;;0003:warehouse_c;hybris
+;0004;;0004:warehouse_c;hybris
+;0005;;0005:warehouse_c;hybris
+;0006;;0006:warehouse_c;hybris
+;0007;;0007:warehouse_c;hybris
+;0100;;0100:warehouse_c;hybris
+;0101;;0101:warehouse_c;hybris
+;0102;;0102:warehouse_c;hybris
+;0110;;0110:warehouse_c;hybris
+;0111;;0111:warehouse_c;hybris
+;0112;;0112:warehouse_c;hybris
+;0200;;0200:warehouse_c;hybris
+;0201;;0201:warehouse_c;hybris
+;0202;;0202:warehouse_c;hybris
+;0210;;0210:warehouse_c;hybris
+;0211;;0211:warehouse_c;hybris
+;0212;;0212:warehouse_c;hybris

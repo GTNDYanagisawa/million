@@ -1,0 +1,14 @@
+# ImpEx for Related Products into Merchandise Store
+  
+# Macros / Replacement Parameter definitions
+$productCatalog=hybrisProductCatalog
+  
+$catalogVersion=catalogversion(catalog(id[default=$productCatalog]),version[default='Staged'])[unique=true,default=$productCatalog:Staged]
+  
+# Insert Product References
+INSERT_UPDATE ProductReference;source(code,$catalogVersion)[unique=true];target(code,$catalogVersion)[unique=true];referenceType(code);active[default=true];preselected[default=false]
+ ;0004;0001;ACCESSORIES;true;false
+ ;0004;0006;OTHERS;true;false
+ ;0003;0001;OTHERS;true;false
+ ;0003;0006;OTHERS;true;false
+ ;0005;0006;SIMILAR;true;false

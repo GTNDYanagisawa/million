@@ -1,0 +1,32 @@
+# ImpEx for Importing Prices into Merchandise Store  
+"#% impex.setLocale( Locale.GERMAN )"
+   
+# Macros / Replacement Parameter definitions
+$productCatalog=hybrisProductCatalog
+    
+$catalogVersion=catalogversion(catalog(id[default=$productCatalog]),version[default='Staged'])[unique=true,default='$productCatalog:Staged']
+$prices=Europe1prices[translator=de.hybris.platform.europe1.jalo.impex.Europe1PricesTranslator]
+    
+# Set product approval status to Approved only for those products that have prices.
+$approved=approvalstatus(code)[default='approved']
+   
+UPDATE Product;code[unique=true];$prices;$approved;$catalogVersion;
+ ;0001;5,00 GBP, 5,50 EUR, 7,48 USD, 765,33 JPY
+ ;0002;2,50 GBP, 2,75 EUR, 3,74 USD, 382,66 JPY
+ ;0003;5,00 GBP, 5,50 EUR, 7,48 USD, 765,33 JPY
+ ;0004;10,00 GBP, 11,00 EUR, 14,96 USD, 1530,65 JPY
+ ;0005;8,00 GBP, 10,00 EUR, 13,6 USD, 1391,50 JPY
+ ;0006;18,00 GBP, 22,00 EUR, 29,92 USD, 3061,30 JPY
+ ;0007;12,00 GBP, 15,00 EUR, 20,40 USD, 2087,25 JPY
+ ;0100;20,00 GBP, 22,00 EUR, 29,92 USD, 3061,30 JPY
+ ;0101;20,00 GBP, 22,00 EUR, 29,92 USD, 3061,30 JPY
+ ;0102;20,00 GBP, 22,00 EUR, 29,92 USD, 3061,30 JPY
+ ;0110;20,00 GBP, 22,00 EUR, 29,92 USD, 3061,30 JPY
+ ;0111;20,00 GBP, 22,00 EUR, 29,92 USD, 3061,30 JPY
+ ;0112;20,00 GBP, 22,00 EUR, 29,92 USD, 3061,30 JPY
+ ;0200;30,00 GBP, 33,00 EUR, 44,88 USD, 4591,95 JPY
+ ;0201;30,00 GBP, 33,00 EUR, 44,88 USD, 4591,95 JPY
+ ;0202;30,00 GBP, 33,00 EUR, 44,88 USD, 4591,95 JPY
+ ;0210;30,00 GBP, 33,00 EUR, 44,88 USD, 4591,95 JPY
+ ;0211;30,00 GBP, 33,00 EUR, 44,88 USD, 4591,95 JPY
+ ;0212;30,00 GBP, 33,00 EUR, 44,88 USD, 4591,95 JPY

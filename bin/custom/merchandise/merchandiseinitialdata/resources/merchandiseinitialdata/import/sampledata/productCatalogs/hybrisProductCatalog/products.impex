@@ -1,0 +1,33 @@
+# ImpEx for Importing Products into Merchandise  store
+  
+# Macros / Replacement Parameter definitions
+$productCatalog=hybrisProductCatalog
+  
+  
+$catalogVersion=catalogversion(catalog(id[default=$productCatalog]),version[default='Staged'])[unique=true,default=$productCatalog:Staged]
+$supercategories=supercategories(code, $catalogVersion)
+$baseProduct=baseProduct(code,$catalogVersion)
+$approved=approvalstatus(code)[default='approved']
+$taxGroup=Europe1PriceFactory_PTG(code)[default=jp-vat-full]
+  
+# Insert Products
+INSERT_UPDATE Product;code[unique=true];$supercategories;manufacturerName;manufacturerAID;unit(code);ean;variantType(code);$catalogVersion;$approved;$taxGroup
+ ;0001;100;Mugs & Co;MUG-1;pieces;
+ ;0002;100;Mugs & Co;PEN-1;pieces;
+ ;0003;100;Mugs & Co;PAD-A5;pieces;
+ ;0004;100;Mugs & Co;PAD-A4;pieces;
+ ;0005;100;Mugs & Co;LANYARD;pieces;
+ ;0006;100;Mugs & Co;USB-STICK;pieces;
+ ;0007;100;Mugs & Co;WIESNHERZ;pieces;
+ ;0100;210;Clothes & Co;SHIRT-WHITE-M-S;pieces;
+ ;0101;210;Clothes & Co;SHIRT-WHITE-M-M;pieces;
+ ;0102;210;Clothes & Co;SHIRT-WHITE-M-L;pieces;
+ ;0110;210;Clothes & Co;SHIRT-WHITE-F-S;pieces;
+ ;0111;210;Clothes & Co;SHIRT-WHITE-F-M;pieces;
+ ;0112;210;Clothes & Co;SHIRT-WHITE-F-L;pieces;
+ ;0200;220;Clothes & Co;SWEAT-WHITE-M-S;pieces;
+ ;0201;220;Clothes & Co;SWEAT-WHITE-M-M;pieces;
+ ;0202;220;Clothes & Co;SWEAT-WHITE-M-L;pieces;
+ ;0210;220;Clothes & Co;SWEAT-WHITE-F-S;pieces;
+ ;0211;220;Clothes & Co;SWEAT-WHITE-F-M;pieces;
+ ;0212;220;Clothes & Co;SWEAT-WHITE-F-L;pieces;

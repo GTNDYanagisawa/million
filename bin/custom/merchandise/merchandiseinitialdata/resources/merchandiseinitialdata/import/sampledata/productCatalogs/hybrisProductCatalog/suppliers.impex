@@ -1,0 +1,13 @@
+# ImpEx for Importing Suppliers into Merchandise store
+  
+# Macros / Replacement Parameter definitions
+$productCatalog=hybrisProductCatalog
+  
+$catalogVersion=catalogversion(catalog(id[default=$productCatalog]),version[default='Staged'])[unique=true,default=$productCatalog:Staged]
+$superCategories=superCategories(code, $catalogVersion)
+  
+# Create Supplier Categories
+INSERT_UPDATE Category;code[unique=true];$superCategories;allowedPrincipals(uid)[default='customergroup'];$catalogVersion
+ ;brands;;
+ ;brand_1;brands
+ ;brand_2;brands

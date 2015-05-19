@@ -1,0 +1,45 @@
+<extensions>
+
+<extension class="de.hybris.platform.workflow.hmc.WorkflowHMCExtension"/>
+<extension class="de.hybris.platform.ldap.hmc.LDAPHMCExtension"/>
+<extension class="de.hybris.platform.advancedsavedquery.hmc.ASQHMCExtension"/>
+<extension class="de.hybris.platform.catalog.hmc.CatalogHMCExtension"/>
+<extension class="de.hybris.platform.deliveryzone.hmc.ZoneDeliveryModeHMCExtension"/>
+<extension class="de.hybris.platform.europe1.hmc.Europe1HMCExtension"/>
+<extension class="de.hybris.platform.impex.hmc.ImpExHMCExtension"/>
+<extension class="de.hybris.platform.mcc.hmc.MccHMCExtension"/>
+<extension class="de.hybris.platform.paymentstandard.hmc.StandardPaymentModeHMCExtension"/>
+<extension class="de.hybris.platform.cockpit.hmc.CockpitHMCExtension"/>
+<extension class="de.hybris.platform.comments.hmc.CommentsHMCExtension"/>
+<extension class="de.hybris.platform.processing.hmc.ProcessingHMCExtension"/>
+<extension class="de.hybris.platform.validation.hmc.ValidationHMCExtension"/>
+<extension class="de.hybris.platform.commons.hmc.CommonsHMCExtension"/>
+<extension class="de.hybris.platform.lucenesearch.hmc.LucenesearchHMCExtension"/>
+<extension class="de.hybris.platform.print.hmc.PrintHMCExtension"/>
+<extension class="de.hybris.platform.bmecat.hmc.BMECatHMCExtension"/>
+<extension class="de.hybris.platform.wishlist2.hmc.Wishlist2HMCExtension"/>
+<extension class="de.hybris.platform.solrfacetsearch.hmc.SolrfacetsearchHMCExtension"/>
+<extension class="de.hybris.platform.customerreview.hmc.CustomerReviewHMCExtension"/>
+<extension class="de.hybris.platform.voucher.hmc.VoucherHMCExtension"/>
+<extension class="de.hybris.platform.promotions.hmc.PromotionsHMCExtension"/>
+<extension class="de.hybris.platform.basecommerce.hmc.BasecommerceHMCExtension"/>
+<extension class="de.hybris.platform.mobileservices.hmc.MobileHMCExtension"/>
+<extension class="de.hybris.platform.cms2.hmc.Cms2HMCExtension"/>
+<extension class="de.hybris.platform.mobileoptionals.hmc.MobileoptionalsHMCExtension"/>
+<extension class="de.hybris.platform.ticket.hmc.TicketsystemHMCExtension"/>
+<extension class="de.hybris.platform.payment.hmc.PaymentHMCExtension"/>
+<extension class="de.hybris.platform.btg.hmc.BtgHMCExtension"/>
+<extension class="de.hybris.platform.platformhmc.hmc.PlatformHMCExtension"/>
+<extension class="de.hybris.platform.classificationsystems.hmc.ClassificationsystemsHMCExtension"/>
+<extension class="de.hybris.platform.commerceservices.hmc.CommerceServicesHMCExtension"/>
+<extension class="de.hybris.platform.acceleratorservices.hmc.AcceleratorServicesHMCExtension"/>
+<extension class="de.hybris.platform.acceleratorcms.hmc.AcceleratorCmsHMCExtension"/>
+<extension class="de.hybris.merchandise.core.hmc.MerchandiseCoreHMCExtension"/>
+<extension class="de.hybris.platform.storefront.hmc.B2ccheckoutaddonHMCExtension"/>
+<extension class="de.hybris.platform.ycommercewebservices.hmc.YcommercewebservicesHMCExtension"/>
+<extension class="de.hybris.platform.commercesearchhmc.hmc.CommercesearchhmcHMCExtension"/>
+<extension class="de.hybris.platform.printcockpit.hmc.PrintcockpitHMCExtension"/>
+<extension class="de.hybris.platform.importcockpit.hmc.ImportCockpitHMCExtension"/>
+<extension class="de.hybris.platform.cmscockpit.hmc.CmscockpitHMCExtension"/>
+<extension class="de.hybris.platform.productcockpit.hmc.ProductcockpitHMCExtension"/>
+</extensions>

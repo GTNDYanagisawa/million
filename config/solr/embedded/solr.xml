@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<solr persistent="true" sharedLib="hybris">
+  <cores adminPath="/admin/cores">
+    <core name="master_apparel-de_Product" instanceDir="C:\hybris-trail2\hybris\config/solr/embedded" dataDir="C:\hybris-trail2\hybris\data\solrfacetsearch\MASTER\apparel-de_Product_1"/>
+
+    <core name="master_apparel-de_Product_1" instanceDir="C:\hybris-trail2\hybris\config/solr/embedded" dataDir="C:\hybris-trail2\hybris\data\solrfacetsearch\MASTER\apparel-de_Product"/>
+
+    <core name="master_apparel-uk_Product" instanceDir="C:\hybris-trail2\hybris\config/solr/embedded" dataDir="C:\hybris-trail2\hybris\data\solrfacetsearch\MASTER\apparel-uk_Product_1"/>
+
+    <core name="master_apparel-uk_Product_1" instanceDir="C:\hybris-trail2\hybris\config/solr/embedded" dataDir="C:\hybris-trail2\hybris\data\solrfacetsearch\MASTER\apparel-uk_Product"/>
+
+    <core name="master_electronics_Product" instanceDir="C:\hybris-trail2\hybris\config/solr/embedded" dataDir="C:\hybris-trail2\hybris\data\solrfacetsearch\MASTER\electronics_Product_1"/>
+
+    <core name="master_electronics_Product_1" instanceDir="C:\hybris-trail2\hybris\config/solr/embedded" dataDir="C:\hybris-trail2\hybris\data\solrfacetsearch\MASTER\electronics_Product"/>
+
+    <core name="master_hybris_Product" instanceDir="C:\hybris-trail2\hybris\config/solr/embedded" dataDir="C:\hybris-trail2\hybris\data\solrfacetsearch\MASTER\hybris_Product_1"/>
+
+    <core name="master_hybris_Product_1" instanceDir="C:\hybris-trail2\hybris\config/solr/embedded" dataDir="C:\hybris-trail2\hybris\data\solrfacetsearch\MASTER\hybris_Product"/>
+
+    <core name="master_powertools_Product" instanceDir="C:\hybris-trail2\hybris\config/solr/embedded" dataDir="C:\hybris-trail2\hybris\data\solrfacetsearch\MASTER\powertools_Product"/>
+
+    <core name="master_powertools_Product_1" instanceDir="C:\hybris-trail2\hybris\config/solr/embedded" dataDir="C:\hybris-trail2\hybris\data\solrfacetsearch\MASTER\powertools_Product_1"/>
+</cores>
+</solr>

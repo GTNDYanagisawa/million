@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8"?><testclasses><customerreview><testclass>de.hybris.platform.customerreview.services.CustomerReviewServiceTest</testclass><testclass>de.hybris.platform.customerreview.SearchRestrictionTest</testclass><testclass>de.hybris.platform.customerreview.jalo.CustomerReviewTest</testclass></customerreview></testclasses>
